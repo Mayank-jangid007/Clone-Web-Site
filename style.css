@@ -1,0 +1,464 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body,html{
+    max-width: 100%; 
+    height: 100%;
+    overflow-x: hidden;
+}
+:root{            /*this is a variable to yr sabme use hota hai ye*/
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color-daark:#2294ed;
+    --padding-inline-section: 20px;
+}
+h1{
+    font-size: 3rem;
+    font-family: 'Poppins', Courier, monospace;
+    color: var(--secondary-text-color);
+}
+h2{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+p{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+    /* utility classes*/
+
+.small-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.container{
+    max-width: 1100px; /* max-width mtlb isse zada jaegi hi nhi*/
+    margin-inline:auto; /* margin-inline means left or right ki dono ki hojaegi=*/
+    padding-inline: var(--padding-inline-section);
+}
+.flex{
+    display: flex;
+    align-items: center;
+
+}
+.hover-links{
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+.hover-links:hover{
+    color: var(--accent-color-daark);
+}
+.primary-button{
+    background-color: var(--accent-color-daark);
+    color:white !important;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    box-shadow: 1px 2px 9px 0px black;;
+    transition: 0.2s ease-out;
+}
+.secondary-button{
+    border: 1px  solid var(--secondary-text-color);
+    color:var(--primary-text-color);
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: 700;
+    transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+    border: 1px solid var(--accent-color-daark);
+    color: var(--accent-color-daark);
+}
+
+.primary-button:hover{
+    background-color: var(--secondary-text-color);
+}
+
+    /* top banner*/
+
+.top-banner{
+    background-color: #e74694;
+    background-image: url(./Assets/assets/asset\ 32.png);
+    background-size: 300px;
+}
+.text-banner{
+    color: white;
+    padding: 15px 30px;  /* 15px means top or bottom and 30px left or right*/
+    text-align: center;
+}
+
+    /*Nav bar*/
+
+.main-nav{
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-between;
+    justify-content: center;
+    justify-content: center;
+}
+.company-logo img{
+    width: 200px;
+}
+.nav-links{
+    /* flex-basis: 730px; this is for width */
+    display: flex;
+    background-color: #ffffff3e;
+}
+.nav-links ul{
+    background-color: #fffafa00;
+    backdrop-filter: blur(10px);
+    left: -100%;
+    width: 100%;
+    padding: 30px;
+    /* height: 450px; */
+    justify-content: center;
+    align-items: center;
+    transition: all 0.9s;
+}
+.nav-links ul .toggle{
+    left: 0;
+    transition: all 0.9s;
+}
+.nav-links ul{
+    gap: 40px;
+    justify-content:end;
+    font-family: "Poppins",Helvetica,Arial;
+}
+#ham{
+    right: 0;
+    margin-right: 20px;
+    position: absolute;
+    display: none;
+
+}
+/* header-section*/
+
+header{
+    padding: 50px var(--padding-inline-section) 0;
+}
+.header-section{
+    gap: 100px;
+    justify-content: center;
+}
+.header-right img{
+    width: 500px;
+}
+.header-left{
+    min-width: 40vw;
+}
+.header-left p{
+    margin-top:10px;
+    margin-bottom:40px;
+}
+
+/* companies-section */
+
+.companies-section{
+    text-align: center;
+    margin-block: 30px;
+}
+.logos{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.logo{
+    height:45px;
+}
+
+/* features-section */
+
+.features-section{
+    padding: 8px var(--padding-inline-section) 00;
+    background-image: url(./Assets/assets/asset\ 34.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.features-header{
+    text-align: center;
+}
+.features-header h2{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-family: 'Poppins', Courier, monospace;
+    color: var(--secondary-text-color);
+}
+
+.features-section h3{
+    font-family: "Poppins","Helvetica Neue";
+    color: var(--secondary-text-color);
+    font-size: 25px;
+}
+
+.features-area{
+    gap: 150px;
+    margin-top:50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* .features-area2{
+    gap: 150px;
+    margin-top:50px;
+    justify-content: center;
+    /* flex-wrap: wrap; 
+} */
+.features-area p{
+    margin-bottom: 30px;
+}
+.features-area2 p{
+    margin-bottom: 30px;
+}
+.feature-img{
+    width: 50px;
+}
+.card{
+    width: 207px;
+    text-align: center;
+    margin-top: 30px;
+}
+/* .card2{
+    max-width: 260px;
+    text-align: center;
+}
+.card3{
+    max-width: 260px;
+    text-align: center;
+} */
+
+    /* big-section" */
+
+.big-section{
+    padding: 70 px var(--padding-inline-section) 00;
+    background-image: url(./Assets/assets/asset\ 34.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.big-section .container{
+    flex-direction: row-reverse;
+}
+
+.image img{
+    width: 600px;
+    margin-top: 110px;
+}
+.big-section{
+    gap: 90px;
+}
+.big-section h3{
+    font-family: "Poppins","Helvetica Neue";
+    color: var(--secondary-text-color);
+    font-size: 20px;
+    margin-block: 20px;
+    font-weight: bold;
+
+}
+.big-section h2{
+    font-size: 2rem;
+    font-family: 'Poppins', Courier, monospace;
+    color: var(--secondary-text-color);
+
+}
+.text .h3{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.image2{
+    width: 100px;
+    margin-block: 20px;
+}
+
+    /* Examples-section */
+
+.examples-section{
+    text-align: center;
+}
+.examples-area{
+    justify-content: space-between;
+    margin-block: 30px;
+    position: relative;
+    flex-wrap: wrap;
+}
+.examples-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.examples-heading-text{
+    font-size: 2rem;
+    font-family: 'Poppins', Courier, monospace;
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+}
+.examples-card{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background-color:black ;
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(./Assets/assets/asset\ 36.jpeg);   /* this is a shed of inside the image in between of text and image*/
+    background-size: cover;
+    transition: 0.2s ease-out;
+    /* position: relative; */
+}
+.examples-card:hover{
+    box-shadow: 0 0 10px #615e5e ;
+}
+.examples-card:nth-child(2){    /* nth cagar means agar class change nhi krni hai to ye use krke jo alag alag class hai uske andar changes kr skte hai   */
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(./Assets/assets/asset\ 37.jpeg);
+    background-size: cover;
+
+}
+.examples-card:nth-child(3){    /* nth cagar means agar class change nhi krni hai to ye use krke jo alag alag class hai uske andar changes kr skte hai   */
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(./Assets/assets/asset\ 38.jpeg);
+    background-size: cover;
+
+}
+.examples-card:nth-child(4){    /* nth cagar means agar class change nhi krni hai to ye use krke jo alag alag class hai uske andar changes kr skte hai   */
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(./Assets/assets/asset\ 39.jpeg);
+    background-size: cover;
+}
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+    color: white;
+}
+
+.full_s{
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: red;
+    position: absolute;
+}
+
+    /*cta-section*/
+
+.cta-section{
+    background-color: #183b54;
+    max-height: 700px;
+}
+.cta-container{
+    align-items: start;
+    min-height: 600px;
+}
+.cta-text {
+    margin-top: 80px;
+}
+.cta-text h1{
+    font-size: 30px;
+    color: white;
+}
+.cta-img{
+    width: 600px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+/* .cta-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-image2{
+    position: absolute;
+}
+.cta-img1{
+    position: absolute;
+}
+.cta-img1{
+    position: absolute;
+    /* top: -413px;
+    left: 186px; */
+    /* color: rgb(7, 2, 2); */
+/* } */ */
+.bottom-left{
+    position: relative;
+    top: -645px;
+    left: 285px;
+}
+
+.bottom-left h4{
+    font-family: "Poppins",Helvetica,Arial;
+    font-size: 20px;
+    color: var(--secondary-text-color);
+    margin-block: 10px;
+}
+.bottom-left h3{
+    font-size: 25px;
+    font-family: "Poppins",Helvetica,Arial;
+    color: var(--primary-text-color);
+    margin-block: 10px;
+}
+.cta-text h3{
+    font-size: 25px;
+    font-family: "Poppins",Helvetica,Arial;
+    margin-block: 10px;
+    color: white;
+    margin-top: 45px;
+}
+.ul li{
+    list-style-type: circle;
+    margin-block:10px ;
+    font-family: 'Poppins', Courier, monospace;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+}
+.ul-deco{
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+    /* footer */
+
+footer{
+    padding-block: 80px;
+    background-color: #ebf2fa;
+}
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.link-column h4{
+    font-family: 'roboto', Courier, monospace;
+    color: var(--primary-text-color);
+}
+.link-column a{
+    font-family: 'Poppins', Courier, monospace;
+    color: var(--secondary-text-color);
+}
+
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+    /* sub-footer */
+
+.sub-footer{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+}
+.sub-footer-container{
+    justify-content: center;
+    gap: 20px;
+}
